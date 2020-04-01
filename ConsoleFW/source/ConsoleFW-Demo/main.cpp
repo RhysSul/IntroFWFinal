@@ -1,6 +1,6 @@
-#include <iostream>
-#include "ConsoleFW.h"
+int launchTicTacToe();
+
 int main()
 {
-	std::cout << foo() << std::endl;
+	launchTicTacToe();
 }

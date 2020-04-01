@@ -18,5 +18,8 @@
     <ClCompile Include="..\..\..\source\ConsoleFW-Demo\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\source\ConsoleFW-Demo\tictactoe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
