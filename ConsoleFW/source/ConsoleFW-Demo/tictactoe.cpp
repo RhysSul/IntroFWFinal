@@ -89,7 +89,7 @@ inline gs_tictactoe_index gs_tictactoe_print(gs_tictactoe game)
 		}
 	}
 	board[GS_TICTACTOE_BOARD_HEIGHT * GS_TICTACTOE_BOARD_WIDTH] = '\0';
-	drawBoard(board, GS_TICTACTOE_BOARD_HEIGHT, GS_TICTACTOE_BOARD_WIDTH); // add in null terminate
+	drawBoard(board, GS_TICTACTOE_BOARD_HEIGHT, GS_TICTACTOE_BOARD_WIDTH);// CF
 
 	total = (xpos * ypos);
 	return total;
@@ -196,10 +196,10 @@ int launchTicTacToe()
 		int x, y;
 		while (spaceState != gs_tictactoe_space_state::gs_tictactoe_space_open) // Update to be if it's not the piece we are either
 		{
-			printIntroduction(currentPlayer);
-			promptForAxisInput(GS_TICTACTOE_BOARD_HEIGHT, 'X');
+			printIntroduction(currentPlayer); // CF
+			promptForAxisInput(GS_TICTACTOE_BOARD_HEIGHT, 'X'); // CF
 			cin >> y;
-			promptForAxisInput(GS_TICTACTOE_BOARD_WIDTH, 'Y');
+			promptForAxisInput(GS_TICTACTOE_BOARD_WIDTH, 'Y'); // CF
 			cin >> x;
 			x -= 1;
 			y -= 1;
@@ -207,7 +207,7 @@ int launchTicTacToe()
 			spaceState = gs_tictactoe_getSpaceState(game, x, y);
 			if (spaceState != gs_tictactoe_space_state::gs_tictactoe_space_open)
 			{
-				displayError("Invalid placement");
+				displayError("Invalid placement"); // CF
 			}
 		}
 		gs_tictactoe_setSpaceState(game, currentPlayerState, x, y);
@@ -216,9 +216,9 @@ int launchTicTacToe()
 	}
 
 	if (gameWinner != gs_tictactoe_space_state::gs_tictactoe_space_invalid)
-		printWinnerMessage(currentPlayer);
+		printWinnerMessage(currentPlayer); // CF
 	else
-		printGeneralMessage("Tie Game.");
+		printGeneralMessage("Tie Game."); // CF
 
 	return 0;
 }
