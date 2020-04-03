@@ -1,12 +1,6 @@
-#include "ConsoleFW.h"
-
 #include <iostream>
 
-
-int foo()
-{
-	return 5;
-}
+#include "ConsoleFW.h"
 
 void displayError(string error)
 {
@@ -35,8 +29,11 @@ void promptForAxisInput(int boardDimension, char axis)
 
 void drawBoard(string BoardLayout, int boardHeight, int boardWidth)
 {
-	if (boardHeight * boardWidth > BoardLayout.length()+1)
+	if (boardHeight * boardWidth > BoardLayout.length() + 1)
+	{
+		displayError("Invalid Board Dimensions");
 		return;
+	}
 
 	for (int i = 0; i < (boardWidth*2)+1; i++)
 		cout << "-";
