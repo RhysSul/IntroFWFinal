@@ -1,4 +1,10 @@
-
+// Copyright Rhys Sullivan & Ryan Burns - Do not distribute 
+/*
+tictactoe.cpp
+Demo game featuring the console framework, to use, put int launchTicTacToe(); at the top of your main
+function and then call this
+Contributors: Rhys Sullivan & Ryan Burns
+*/
 #include <iostream>
 #include "ConsoleFW.h"
 using namespace std;

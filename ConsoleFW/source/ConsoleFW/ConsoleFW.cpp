@@ -1,5 +1,11 @@
+// Copyright Rhys Sullivan & Ryan Burns - Do not distribute 
+/*
+ConsoleFW.cpp
+Holds the function definitions for the display framework
+DO NOT INCLUDE THIS FILE
+Contributors: Rhys Sullivan & Ryan Burns
+*/
 #include <iostream>
-
 #include "ConsoleFW.h"
 
 /*

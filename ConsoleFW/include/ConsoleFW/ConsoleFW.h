@@ -1,3 +1,10 @@
+// Copyright Rhys Sullivan & Ryan Burns - Do not distribute 
+/*
+ConsoleFW.h
+Holds the function prototypes for the display functionality of the framework to be included
+where display output is needed
+Contributors: Rhys Sullivan & Ryan Burns
+*/
 #pragma once
 #include <string>
 
